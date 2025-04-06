@@ -1,0 +1,14 @@
+# yay
+yay -S box64
+
+# Locale problems?
+Change language to PT-BR through Settings
+sudo nano /etc/locale.gen # uncomment the one you need pt_BR.UTF-8
+sudo locale-gen
+localectl list-locales
+sudo localectl set-locale LANG=pt_BR.UTF-8
+
+# FOR DISCOVER:
+sudo pacman -S discover flatpak fwupd packagekit-qt6
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-ls --arch=aarch64

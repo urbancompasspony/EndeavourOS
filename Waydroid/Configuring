@@ -1,0 +1,17 @@
+yay -Syyu
+sudo pacman -S lzip radeontop nvtop
+
+yay -S binder_linux-dkms
+or 
+yay -S python-gbinder --rebuild
+
+sudo modprobe binder-linux devices=binder,hwbinder,vndbinder
+yay -S waydroid
+
+sudo firewall-cmd --zone=trusted --add-port=67/udp; sudo firewall-cmd --zone=trusted --add-port=53/udp; sudo firewall-cmd --zone=trusted --add-forward; sudo firewall-cmd --zone=trusted --add-interface=waydroid0; sudo firewall-cmd --runtime-to-permanent
+
+sudo waydroid init -s GAPPS
+
+# START!
+waydroid show-full-ui
+

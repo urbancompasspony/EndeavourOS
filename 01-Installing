@@ -32,7 +32,7 @@ luanti steam v4l2loopback-dkms terminator missioncenter trippy oha kio-zeroconf 
 #######
 # YAY #
 
-yay -S microsoft-edge-stable-bin google-chrome anydesk-bin ventoy-bin opera \
+yay -S microsoft-edge-stable-bin google-chrome anydesk-bin ventoy-bin opera protonup-qt-bin \
 upscayl-appimage drawio-desktop-appimage woeusb-ng edex-ui-bin
 
 ###########
@@ -41,7 +41,6 @@ upscayl-appimage drawio-desktop-appimage woeusb-ng edex-ui-bin
 sudo flatpak install com.thincast.client \
 com.usebottles.bottles \
 app.freelens.Freelens \
-com.popcornfx.PopcornFXEditor \
 uno.platform.uno-calculator --noninteractive -y
 
 ###################

@@ -27,18 +27,22 @@ filelight smb4k plasma-disks kolourpaint granatier okteta krename timeshift kget
 iperf traceroute lib32-pipewire lib32-libpulse arp-scan speedtest-cli samba rsync rclone sshpass curl rclone openvpn qbittorrent nmap yt-dlp smartmontools \
 7zip cronie zip gvfs-dnssd unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel rdesktop rpi-imager ciano android-tools webp-pixbuf-loader gthumb bash-language-server \
 torbrowser-launcher tree gparted gnome-disk-utility k3b audacity thunderbird libreoffice libreoffice-fresh-pt-br jre11-openjdk thunderbird-i18n-pt-br vlc remmina freerdp libvncserver ckpat gimp blender obs-studio kdenlive wine \
-luanti steam v4l2loopback-dkms terminator missioncenter trippy oha kio-zeroconf kio-gdrive lact kup bup ponysay --noconfirm --needed
+luanti steam v4l2loopback-dkms terminator missioncenter trippy oha kio-zeroconf kio-gdrive lact kup bup ponysay kpat --noconfirm --needed
 
 #######
 # YAY #
 
-yay -S microsoft-edge-stable-bin google-chrome anydesk-bin ventoy-bin opera \
+yay -S microsoft-edge-stable-bin google-chrome anydesk-bin ventoy-bin opera popcorn-fx-bin \
 upscayl-appimage drawio-desktop-appimage woeusb-ng edex-ui-bin
 
 ###########
 # Flatpak #
 
-sudo flatpak install com.thincast.client com.usebottles.bottles app.freelens.Freelens
+sudo flatpak install com.thincast.client \
+com.usebottles.bottles \
+app.freelens.Freelens \
+com.popcornfx.PopcornFXEditor \
+uno.platform.uno-calculator --noninteractive -y
 
 ###################
 # GRUB PARAMETERS #

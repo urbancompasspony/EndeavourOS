@@ -12,8 +12,9 @@ sudo eos-rankmirrors --verbose
 yay -Syyu
 
 # FOR DISCOVER
-sudo pacman -S discover flatpak fwupd packagekit-qt6 flatpak-kcm plasma-discover-backend-flatpak
+sudo pacman -S discover flatpak fwupd packagekit-qt6 flatpak-kcm
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# NOT USED plasma-discover-backend-flatpak
 
 # Busca e nome do org.pacote.?
 sudo flatpak remote-ls --arch=aarch64 | grep nome_do_pacote

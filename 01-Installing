@@ -161,5 +161,5 @@ sudo systemctl enable --now sshd cronie docker libvirtd lact
 To fstab:
 //172.20.0.2/particular /mnt/particular cifs credentials=/home/ztge/.smb,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,user,vers=2.1,nofail,noauto 0 0
 
-If connected to network, try mounting:
+If connected to network will try mounting, do not use it unless really needed!
 x-systemd.automount,x-systemd.requires=network-online.target,x-systemd.device-timeout=3

@@ -30,7 +30,7 @@ sudo pacman -S docker-buildx docker \
 qemu-full qemu-base libvirt-dbus bridge-utils virt-manager ovmf dnsmasq \
 filelight smb4k plasma-disks kolourpaint granatier okteta krename timeshift kget gnome-nettool duf detox fdupes keepassxc \
 iperf traceroute lib32-pipewire lib32-libpulse arp-scan speedtest-cli samba rsync rclone sshpass curl rclone openvpn qbittorrent nmap yt-dlp smartmontools \
-7zip cronie zip gvfs-dnssd unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel rdesktop rpi-imager ciano android-tools webp-pixbuf-loader gthumb bash-language-server \
+7zip cronie zip gvfs-dnssd unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel rdesktop rpi-imager ciano android-tools webp-pixbuf-loader gthumb bash-language-server catfish \
 torbrowser-launcher tree gparted gnome-disk-utility k3b audacity thunderbird libreoffice libreoffice-fresh-pt-br jre11-openjdk thunderbird-i18n-pt-br vlc remmina freerdp libvncserver ckpat gimp blender obs-studio kdenlive wine \
 luanti steam v4l2loopback-dkms terminator missioncenter trippy oha kio-zeroconf kio-gdrive lact kup bup ponysay kpat snapper xmlstarlet freerdp2 drawio-desktop --noconfirm --needed
 

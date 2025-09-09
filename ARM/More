@@ -12,3 +12,9 @@ sudo localectl set-locale LANG=pt_BR.UTF-8
 sudo pacman -S discover flatpak fwupd packagekit-qt6
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-ls --arch=aarch64
+
+Armbian Noble KDE Neon 25.5.1
+sudo apt install mesa-vulkan-drivers mesa-utils vulkan-tools
+
+EndeavourOS:
+sudo pacman -S vulkan-broadcom

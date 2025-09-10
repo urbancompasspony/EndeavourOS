@@ -1,0 +1,33 @@
+distrobox create --root \
+  --image ghcr.io/vanilla-os/pico:main \
+  --additional-packages "systemd libpam-systemd curl kmod dbus-x11 iptables mutter" \
+  --init \
+  --unshare-all \
+  --name waydroid
+
+curl --progress-bar --proto '=https' --tlsv1.2 -Sf https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg
+echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ bookworm main" | tee /etc/apt/sources.list.d/waydroid.list
+sudo apt update
+sudo apt install waydroid
+
+export XDG_RUNTIME_DIR="/run/host/${XDG_RUNTIME_DIR}"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/host/$(echo "${DBUS_SESSION_BUS_ADDRESS}" | cut -d '=' -f2-)"
+
+waydroid init
+
+OR
+
+The Waydroid image from the Vanilla OS Team is designed to streamline the entire setup process. To use it, proceed as follows:
+
+distrobox create --root \
+  --image ghcr.io/vanilla-os/waydroid:main \
+  --init \
+  --unshare-all \
+  --name waydroid
+
+distrobox enter --root waydroid
+Once started, Waydroid is automatically executed via Systemd. Check for the process to finish using the systemctl status waydroid-init command, then start using Waydroid with:
+
+ewaydroid --help
+Make sure to use the ewaydroid command each time you need to work with Waydroid. This command is a wrapper that sets the proper environment variables to make it work with the host D-Bus.
+

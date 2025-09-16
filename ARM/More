@@ -15,6 +15,3 @@ sudo flatpak remote-ls --arch=aarch64
 
 Armbian Noble KDE Neon 25.5.1
 sudo apt install mesa-vulkan-drivers mesa-utils vulkan-tools
-
-EndeavourOS:
-sudo pacman -S vulkan-broadcom

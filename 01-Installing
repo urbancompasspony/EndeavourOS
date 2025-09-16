@@ -42,7 +42,7 @@ optional: shellcheck bash-language-server
 # YAY #
 
 yay -S microsoft-edge-stable-bin google-chrome anydesk-bin ventoy-bin opera protonup-qt-bin onlyoffice-bin \
-upscayl-appimage drawio-desktop-appimage woeusb-ng edex-ui-bin 
+upscayl-appimage woeusb-ng edex-ui-bin 
 
 ###########
 # Flatpak #

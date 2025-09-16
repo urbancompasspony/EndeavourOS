@@ -7,6 +7,8 @@ on fstab!
 
 NOT USE ANY KERNEL LTS!
 
+curl -sSL https://raw.githubusercontent.com/urbancompasspony/bashrc/main/install.sh | bash
+
 sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
 sudo eos-rankmirrors --verbose
 yay -Syyu
@@ -31,8 +33,8 @@ qemu-full qemu-base libvirt-dbus bridge-utils virt-manager ovmf dnsmasq \
 filelight smb4k plasma-disks kolourpaint granatier okteta krename timeshift kget gnome-nettool duf detox fdupes keepassxc \
 iperf traceroute lib32-pipewire lib32-libpulse arp-scan speedtest-cli samba rsync rclone sshpass curl rclone openvpn qbittorrent nmap yt-dlp smartmontools \
 7zip cronie zip gvfs-dnssd unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel rdesktop rpi-imager ciano android-tools webp-pixbuf-loader gthumb bash-language-server catfish \
-torbrowser-launcher tree gparted gnome-disk-utility k3b audacity thunderbird libreoffice libreoffice-fresh-pt-br jre11-openjdk thunderbird-i18n-pt-br vlc remmina freerdp libvncserver ckpat gimp blender obs-studio kdenlive wine \
-luanti steam v4l2loopback-dkms terminator missioncenter trippy oha kio-zeroconf kio-gdrive lact kup bup ponysay kpat snapper xmlstarlet freerdp2 drawio-desktop --noconfirm --needed
+torbrowser-launcher tree gparted gnome-disk-utility k3b audacity thunderbird libreoffice libreoffice-fresh-pt-br jre11-openjdk thunderbird-i18n-pt-br vlc remmina freerdp libvncserver kpat gimp blender obs-studio kdenlive wine \
+luanti steam terminator  trippy oha kio-zeroconf kio-gdrive lact kup bup ponysay kpat snapper xmlstarlet freerdp2 drawio-desktop --noconfirm --needed
 
 optional: shellcheck bash-language-server
 
@@ -47,8 +49,8 @@ upscayl-appimage drawio-desktop-appimage woeusb-ng edex-ui-bin
 
 sudo flatpak install com.thincast.client \
 com.usebottles.bottles \
-app.freelens.Freelens \
-uno.platform.uno-calculator --noninteractive -y
+uno.platform.uno-calculator \
+missioncenter --noninteractive -y
 
 ###################
 # GRUB PARAMETERS #
@@ -72,12 +74,6 @@ sudo reinstall-kernels
 
 EXT4? Use it:
 sudo tune2fs -m 0 /dev/sdXY
-
-#########
-# MODEL #
-
-# Config System with Model:
-curl -L m.linuxuniverse.com.br | bash
 
 When AMD set VULKAN-RADEON and lib32-vulkan-radeon for Steam!
 AMDVLK is the old driver for old/legacy hardware.

@@ -7,7 +7,7 @@ filelight smb4k plasma-disks kolourpaint granatier okteta krename timeshift kget
 iperf traceroute arp-scan speedtest-cli samba sshpass curl rclone openvpn qbittorrent nmap yt-dlp \
 cronie zip unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel rdesktop rpi-imager webp-pixbuf-loader gthumb bash-language-server \
 torbrowser-launcher tree gparted gnome-disk-utility  audacity thunderbird libreoffice libreoffice-fresh-pt-br thunderbird-i18n-pt-br vlc kpat gimp remmina \
-luanti terminator
+luanti terminator distrobox
 
 Extra: v4l2loopback-dkms
 

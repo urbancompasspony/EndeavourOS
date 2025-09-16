@@ -9,6 +9,8 @@ cronie zip unzip dialog btrfs-progs cifs-utils inxi btop iotop cmatrix parallel 
 torbrowser-launcher tree gparted gnome-disk-utility  audacity thunderbird libreoffice libreoffice-fresh-pt-br thunderbird-i18n-pt-br vlc kpat gimp remmina \
 luanti terminator distrobox
 
+yay -S brave-bin
+
 Extra: v4l2loopback-dkms
 
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq

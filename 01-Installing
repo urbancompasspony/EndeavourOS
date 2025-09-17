@@ -9,6 +9,9 @@ NOT USE ANY KERNEL LTS!
 
 curl -sSL https://raw.githubusercontent.com/urbancompasspony/bashrc/main/install.sh | bash
 
+sudo mkdir /home/administrador
+sudo chmod 777 -R /home/administrador
+
 sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
 sudo eos-rankmirrors --verbose
 yay -Syyu

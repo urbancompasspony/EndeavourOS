@@ -14,3 +14,4 @@ sudo chmod +x /usr/local/bin/yq
 sudo pacman -S docker-buildx docker btop lib32-pipewire lib32-libpulse dialog unzip inxi iotop cronie rocm-hip-runtime rocm-opencl-runtime rocminfo opencl-headers opencl-clhpp radeontop
 
 sudo systemctl enable --now sshd cronie docker 
+

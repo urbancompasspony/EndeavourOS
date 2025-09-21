@@ -15,3 +15,9 @@ sudo pacman -S docker-buildx docker btop lib32-pipewire lib32-libpulse dialog un
 
 sudo systemctl enable --now sshd cronie docker 
 
+sudo pacman -S openbox wayland labwc obconf-qt
+mkdir -p .config/labwc
+cp /etc/xdg/openbox/menu.xml ~/.config/labwc/menu.xml
+
+START:
+$ labwc
